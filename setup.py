@@ -28,20 +28,21 @@ REQUIRES = [
     "typing-extensions >= 4.7.1",
 ]
 
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
 setup(
     name=NAME,
     version=VERSION,
-    description="Zarnite Core API",
-    author="OpenAPI Generator community",
-    author_email="team@openapitools.org",
-    url="",
-    keywords=["OpenAPI", "OpenAPI-Generator", "Zarnite Core API"],
+    description="Official Python SDK for the Zarnite AI platform",
+    author="zarnite",
+    author_email="support@zarnite.com",
+    url="https://github.com/ZZARN/zarnite-sdk-python",
+    keywords=["zarnite", "sdk", "ai", "tutor", "voice", "rag"],
     install_requires=REQUIRES,
     packages=find_packages(exclude=["test", "tests"]),
     include_package_data=True,
     long_description_content_type='text/markdown',
-    long_description="""\
-    Agent lifecycle, behaviors, knowledge, learners, API keys, deployments, playground, memory, usage, analytics.
-    """,  # noqa: E501
+    long_description=long_description,
     package_data={"zarnite": ["py.typed"]},
 )
