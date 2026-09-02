@@ -32,6 +32,7 @@ setup(
     name=NAME,
     version=VERSION,
     description="Zarnite Core API",
+    license="MIT",
     author="OpenAPI Generator community",
     author_email="team@openapitools.org",
     url="https://github.com/ZZARN/zarnite-sdk-python",

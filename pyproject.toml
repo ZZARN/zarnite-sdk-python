@@ -2,6 +2,7 @@
 name = "zarnite"
 version = "1.0.0"
 description = "Zarnite Core API"
+license = "MIT"
 authors = [
   {name = "OpenAPI Generator Community",email = "team@openapitools.org"},
 ]
