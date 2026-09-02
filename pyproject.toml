@@ -1,12 +1,12 @@
 [project]
 name = "zarnite"
 version = "1.0.0"
-description = "Official Python SDK for the Zarnite AI platform"
+description = "Zarnite Core API"
 authors = [
-  {name = "zarnite", email = "support@zarnite.com"},
+  {name = "OpenAPI Generator Community",email = "team@openapitools.org"},
 ]
 readme = "README.md"
-keywords = ["zarnite", "sdk", "ai", "tutor", "voice", "rag"]
+keywords = ["OpenAPI", "OpenAPI-Generator", "Zarnite Core API"]
 requires-python = ">=3.10"
 
 dependencies = [

@@ -18,6 +18,8 @@ __version__ = "1.0.0"
 
 # Define package exports
 __all__ = [
+    "Zarnite",
+    "ZarniteError",
     "APIKeysApi",
     "AgentsApi",
     "AnalyticsApi",
@@ -220,13 +222,7 @@ __all__ = [
     "VoiceRuntimeTranscriptMessage",
     "VoiceRuntimeTranscriptPayload",
     "VoiceRuntimeUsagePayload",
-    "Zarnite",
-    "ZarniteError",
 ]
-
-# import custom client and exception classes into sdk package
-from zarnite.client import Zarnite as Zarnite
-from zarnite.client import ZarniteError as ZarniteError
 
 # import apis into sdk package
 from zarnite.api.api_keys_api import APIKeysApi as APIKeysApi
@@ -245,6 +241,8 @@ from zarnite.api.usage_billing_api import UsageBillingApi as UsageBillingApi
 from zarnite.api.voice_runtime_api import VoiceRuntimeApi as VoiceRuntimeApi
 
 # import ApiClient
+from zarnite.client import Zarnite as Zarnite
+from zarnite.client import ZarniteError as ZarniteError
 from zarnite.api_response import ApiResponse as ApiResponse
 from zarnite.api_client import ApiClient as ApiClient
 from zarnite.configuration import Configuration as Configuration
