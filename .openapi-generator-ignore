@@ -21,3 +21,10 @@
 #docs/*.md
 # Then explicitly reverse the ignore rule for a single file:
 #!docs/README.md
+
+# Ignore README.md, hand-written documentation the generator would otherwise overwrite
+README.md
+
+# Ignore zarnite/client.py, the hand-written wrapper holding the production host and error class
+# It is not in the generator's output manifest, so nothing protects it today
+zarnite/client.py
